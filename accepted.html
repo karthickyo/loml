@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>B-BAKA..! 💜</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #f4e8ff,
+        #d8b4fe,
+        #c084fc
+    );
+    font-family:'Poppins';
+}
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #f4e8ff,
+        #d8b4fe,
+        #c084fc
+    );
+    font-family:'Poppins';
+
+    animation:fadeIn 1.5s ease;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    max-width:600px;
+}
+h1{
+    font-family:'Pacifico';
+    color:#7e22ce;
+}
+img{
+    width:250px;
+    border-radius:20px;
+    margin-top:20px;
+}
+.side-gif{
+    position: fixed;
+    width: 140px;
+    z-index: 1;
+    animation: floaty 3s ease-in-out infinite;
+}
+.left-gif{
+    left: 30px;
+    top: 50%;
+}
+.right-gif{
+    right: 30px;
+    top: 50%;
+}
+@keyframes floaty{
+    0%{
+        transform: translateY(-50%) translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-50%) translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(-50%) translateY(0px);
+    }
+}
+</style>
+</head>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+<script>
+window.addEventListener("load", () => {
+    const music = document.getElementById("bgMusic");
+    music.volume = 0.5;
+    music.play().catch(error => {
+        console.log("Audio blocked:", error);
+    });
+
+});
+</script>
+<body>
+    <img src="cat1.gif" class="side-gif left-gif">
+    <img src="dog1.gif" class="side-gif right-gif">
+<div class="card">
+<h1>
+ur application is accepted 💜
+</h1>
+<p>
+congrats.
+u are now officially
+the love of my life. but hmp..<br>
+it is not like i love you or anything!
+</p>
+<img src="kaito.jpeg">
+<p>
+jus.. pls don't leave me. 
+💜
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #f4e8ff,
+        #d8b4fe,
+        #c084fc
+    );
+    font-family:'Poppins', sans-serif;
+}
+.card{
+    background:rgba(255,255,255,0.85);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    backdrop-filter:blur(10px);
+}
+h1{
+    font-family:'Pacifico', cursive;
+    color:#7e22ce;
+    margin-bottom:20px;
+}
+p{
+    margin-bottom:25px;
+    color:#555;
+}
+.buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+}
+button{
+    border:none;
+    padding:14px 28px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:0.3s;
+}
+#yesBtn{
+    background:#9333ea;
+    color:white;
+}
+#yesBtn:hover{
+    transform:scale(1.08);
+}
+#noBtn{
+    background:#ede9fe;
+    color:#6b21a8;
+}
+.snoopy{
+    position:absolute;
+    bottom:20px;
+    width:120px;
+    animation:walk 12s linear infinite;
+}
+@keyframes walk{
+    from{
+        left:-150px;
+    }
+    to{
+        left:100%;
+    }
+}
+.snoopy1{
+    position:absolute;
+    top:20px;
+    width:120px;
+    animation:walk1 12s linear infinite;
+}
+@keyframes walk1{
+    from{
+        right:-150px;
+    }
+    to{
+        right:100%;
+    }
+}
+.side-gif{
+    position: fixed;
+    width: 140px;
+    z-index: 1;
+    animation: floaty 3s ease-in-out infinite;
+}
+@keyframes floaty{
+    0%{
+        transform: translateY(-50%) translateY(0px);
+    }
+    50%{
+        transform: translateY(-50%) translateY(-15px);
+    }
+    100%{
+        transform: translateY(-50%) translateY(0px);
+    }
+}
+.left-gif{
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right-gif{
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
